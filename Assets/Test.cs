@@ -33,12 +33,22 @@ public class Boss {
 public class Test : MonoBehaviour {
 
 	　　void Start () {
+		int[] points = { 1, 2, 3, 4, 5, };
+
+		for (int i = 0; i < points.Length; i++){
+			Debug.Log (points [i]);
+	}
+		int[] reverse = { 1, 2, 3, 4, 5 };
+
+		for (int i = 4; i >= 0; i--) {
+			Debug.Log (reverse [i]);
+	}
 		　　　　　　　
 		Boss lastboss = new Boss ();
 
 		lastboss.Attack ();
 		lastboss.Defence (3);
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 11; i++) {
 		lastboss.Magic (5);
 	}
 }
